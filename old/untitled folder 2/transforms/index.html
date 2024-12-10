@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfroms</title>
+    <style>
+      /* .container {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        text-align: center;
+        line-height: 100px; */
+      /* transform: rotate(90deg); */
+      /* transform: scale(1,2); */
+      /* transform: skew(20deg, 20deg); (x = from left and right),  (y = from up and down) */
+      /* transform: translate(100px, 50px); */
+
+      /* } */
+
+      .outer-container {
+        background-color: #282828;
+        height: 300px;
+        width: 300px;
+        transform: perspective(1000px);
+      }
+
+      .inner-container {
+        background-color: cornsilk;
+        height: 150px;
+        width: 150px;
+        transform:translateZ(50px) translate(75px, 75px) rotateX(30deg) rotateY(30deg);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">1</div>
+    <div class="outer-container">
+      <div class="inner-container"></div>
+    </div>
+  </body>
+</html>

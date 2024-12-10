@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form oninput="outputValue.value = 0 + parseInt(first.value)">
+      <input type="range" id="first" />
+      =
+      <output name="outputValue"></output>
+    </form>
+    <br />
+    <br />
+    <br />
+
+    <form
+      oninput="gsalary.value = parseInt(salary.value) - ( salary.value * parseInt(pf.value) / 100 ); 
+      pfamount.value =  salary.value * parseInt(pf.value) / 100"
+    >
+      <label for="salary">Salary:</label>
+      <input type="text" id="salary" placeholder="Enter your salary" />
+      <label for="pf">PF in :</label>
+      <input type="text" id="pf" placeholder="Enter your pf%" />
+      <br />
+      PF value:
+      <output name="pfamount"></output>
+      <br />
+      Gross Salary:
+      <output name="gsalary"></output>
+    </form>
+  </body>
+</html>

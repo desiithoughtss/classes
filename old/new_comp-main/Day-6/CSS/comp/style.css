@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* the rule of the css it tells us that one by one */
+/* box sizing is the the kind of the thing voh hemin yeh batatti hai ki like vontent box hai ya border box hai ki toal agar ahiemin itini hrigth ya width rakhni hai to uske kiye using karni hai  */
+/* attribute selctors */
+/* inline ka matlab hota hia voh content leta hai total usko bjki xhizo se koi fark nahi hai */
+/* block ka mtalb hai bloak to uspe koi ependency nahi hai */
+/* aligin items, jc yeh x and y axis pe kaam karta hai */

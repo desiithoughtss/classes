@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: #caf0f8;
+        min-height: 100vh;
+        display: flex;
+      }
+      .first-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .first-text {
+        font-size: 50px;
+      }
+
+      .boxes {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #caf0f8;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+      }
+      .b1 {
+        height: 200px;
+        width: 300px;
+        background-color: blue;
+        animation-name: boxes;
+        animation: 1s boxes 1s ease-out forwards;
+        animation-timeline: view();
+        opacity: 0;
+      }
+
+      .b2 {
+        height: 50px;
+        width: 300px;
+        background-color: red;
+        animation: 1s boxes 1s ease-out forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+        opacity: 0;
+      }
+
+      @keyframes boxes {
+        from {
+          opacity: 0;
+          transform: translateX(-30px) translateY(-200px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0) translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-box">
+        <div class="first-text">Hello</div>
+      </div>
+    </div>
+    <div class="boxes">
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+      <div class="b2">S</div>
+      <div class="b1">B</div>
+
+      <div></div>
+    </div>
+  </body>
+</html>
