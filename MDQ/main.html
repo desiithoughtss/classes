@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: #1a1a1a;
+        color: white;
+        height: 100vh;
+        width: 100vw;
+      }
+      .navbar {
+        background-color: brown;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .navbar img {
+        height: 100px;
+        width: 100px;
+      }
+      .navbar ul {
+        list-style-type: none;
+        display: flex;
+        gap: 40px;
+      }
+
+      .burger {
+        display: none;
+        height: 10px;
+        width: 10px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 120px;
+      }
+      .main img {
+        height: 600px;
+        width: 500px;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 80px;
+      }
+
+      @media screen and (max-width: 1080px) {
+        .container {
+          background-color: darkcyan;
+        }
+        .navbar ul {
+          display: none;
+        }
+        .burger {
+          display: block;
+        }
+        .main {
+          flex-direction: column;
+          padding: 20px;
+        }
+        .main img {
+          height: 300px;
+          width: 500px;
+          margin-top: 80px;
+        }
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="https://i.pinimg.com/736x/7c/ed/91/7ced91c8e5a8043de0864a547f45d724.jpg"
+            alt=""
+          />
+        </div>
+        <nav>
+          <ul>
+            <li>Lorem.</li>
+            <li>Lorem.</li>
+            <li>Lorem.</li>
+          </ul>
+          <img
+            class="burger"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6N2Kga6CZUh1JQ4HjC0xLv0Qd1aHZ5zeJrw&s"
+            alt=""
+          />
+        </nav>
+      </div>
+      <div class="main">
+        <div class="image">
+          <img
+            src="https://media.istockphoto.com/id/1358824913/vector/isometric-file-manager-data-storage-and-indexing-human-resources-team-composition-team.jpg?s=612x612&w=0&k=20&c=gifuitPx_oO61Gi4afTxUlzoP3Zpopz7rXZxhb9hCzE="
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fuga
+            laboriosam, dicta excepturi accusantium voluptate dolor distinctio
+            qui dolorum eius neque natus eos, velit officiis blanditiis
+            molestias doloremque minima perspiciatis! Aliquam nemo ipsa
+            blanditiis reiciendis esse, delectus fugit odio voluptatum
+            reprehenderit magni deserunt numquam ipsam amet rerum! Praesentium,
+            accusamus id.
+          </p>
+          <ol>
+            <li>Lorem.</li>
+            <li>Lorem.</li>
+            <li>Lorem.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
